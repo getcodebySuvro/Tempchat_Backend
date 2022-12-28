@@ -63,7 +63,7 @@ socket.on("new_users",(username)=>{
     })
 
     socket.on("seen",(seen,room)=>{
-        io.in(room).emit("setseen",seen)
+        io.in(room).emit("setseen",seen);
 
     })
    
